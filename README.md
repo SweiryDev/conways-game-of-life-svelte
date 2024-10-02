@@ -1,58 +1,62 @@
-# create-svelte
+# Conway's Game of Life in Svelte
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project is an implementation of Conway's Game of Life using SvelteKit, TypeScript, and Tailwind CSS. 
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+[View the Live Demo](https://progressivesweiry.github.io/conways-game-of-life-svelte)
 
-## Creating a project
+## About Conway's Game of Life
 
-If you're seeing this, you've probably already done this step. Congrats!
+Conway's Game of Life is a cellular automaton devised by mathematician John Conway in 1970. It's a zero-player game, meaning its evolution is determined by its initial state, requiring no further input. The game is played on a grid of cells, each of which can be alive or dead. The state of each cell in the next generation is determined by a set of rules based on the states of its neighboring cells.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Development Process
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+The development of this project involved several stages:
 
-## Developing
+1. **Planning**: Researching Conway's Game of Life rules and planning the project structure.
+2. **Setup**: Initializing a SvelteKit project with TypeScript and Tailwind CSS.
+3. **Core Logic**: Implementing the game's rules and grid management.
+4. **UI Development**: Creating a responsive grid and control interface.
+5. **Optimization**: Improving performance for larger grids and adding features like speed control.
+6. **Deployment**: Configuring the project for GitHub Pages deployment.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Why Svelte and Tailwind CSS?
 
-```bash
-npm run dev
+I chose Svelte for this project due to its simplicity and excellent performance. Svelte's reactive approach made it easy to manage the game's state and update the UI efficiently. Tailwind CSS was selected for its utility-first approach, allowing for rapid UI development and easy customization.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## AI Assistance
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+During the development of this project, I utilized Claude 3.5 Sonnet as a supportive tool. Claude assisted with:
+- Clarifying concepts and providing explanations when needed
+- Offering suggestions for code optimization
+- Helping troubleshoot deployment issues
 
-## Building
+While Claude was a valuable resource, the majority of the project implementation, decision-making, and problem-solving was done by me.
 
-To build your library:
+Claude had few flaws regarding SvelteKit configuration and following my progress but it was good experience. 
 
-```bash
-npm run package
-```
+## Running the Project Locally
 
-To create a production version of your showcase app:
+To run this project on your local machine:
 
-```bash
-npm run build
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/ProgressiveSweiry/conways-game-of-life-svelte.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd conways-game-of-life-svelte
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Run the development server:
+   ```
+   npm run dev
+   ```
+5. Open your browser and visit `http://localhost:5173`
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## License
 
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+This project is open source and available under the [MIT License](LICENSE).
