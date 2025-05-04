@@ -2,7 +2,7 @@
 
 This project is an implementation of Conway's Game of Life using SvelteKit, TypeScript, and Tailwind CSS. 
 
-[View the Live Demo](https://progressivesweiry.github.io/conways-game-of-life-svelte)
+[View the Live Demo](https://sweirydev.github.io/conways-game-of-life-svelte/)
 
 ## About Conway's Game of Life
 
